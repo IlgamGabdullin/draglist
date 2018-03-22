@@ -14,7 +14,7 @@ class DragList extends Component {
   
   componentDidMount() {
     const list = this.props.list.map((item, position) => {
-      return {...item, position}
+      return {...item, position, elem: null}
     })
     this.setState({list})
   }
